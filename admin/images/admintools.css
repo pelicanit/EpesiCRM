@@ -122,12 +122,12 @@ table.listing tr.odd {
 }
 
 .footer {
-    margin-top: 10px;
-    font-family: 'Exo 2', sans-serif;
+	font-family: 'Exo 2', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
 	color: #0A3C5C;
+	margin-top: 30px;
 	background-color: #FFFFFF;
 	text-decoration: none;
 	vertical-align: bottom;
