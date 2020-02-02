@@ -71,17 +71,18 @@ class SimpleLayout {
             </head>
 
             <body>
-                <table id="banner" border="0" cellpadding="0" cellspacing="0">
+			<div class="banner">
+                <table id="banner">
                     <tr>
                         <td class="image">&nbsp;</td>
                         <td class="header"><H1>ADMIN UTILITIES</H1></td>
 						<td><?php if ($this->show_action_links)
-							print('<div>' . $this->format_action_links() . '</div>');
+							print('<div id="menu">' . $this->format_action_links() . '</div>');
 						?></td>
                     </tr>
                 </table>
-                <br/>
-                <center>
+			</div>
+			
     <?php }
 
     function startframe() { ?>
@@ -98,7 +99,7 @@ class SimpleLayout {
     function pagefooter() {
         ?>
           
-          <div class="footer" style="margin-top: 10px;">
+          <div class="footer">
             <div><a href="https://epe.si"><img src="images/epesi-powered.png"></a></div>
 			<div>Copyright &copy; 2006-<?php echo date('Y'); ?> by Janusz Tylek</div>
 		    <div class="support">Support: <a href="https://epesi.org">https://epesi.org</a></div>

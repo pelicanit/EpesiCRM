@@ -1,30 +1,27 @@
 body, p {
 	font-family: 'Titillium Web', sans-serif;
 	font-style: normal;
-	font-weight: 400;
     font-size: 16px;
     color: #0A3C5C;
-	background-color: #FFFFFF;
 }
 
 *, html {
     font-family: 'Titillium Web', sans-serif;
 	font-style: normal;
-	font-weight: 400;
-    font-size: 16px;
-    color: #0A3C5C;
 }
 
 a {
     font-family: 'Exo 2', sans-serif;
-	font-style: bold;
-	font-weight: 400;
-	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
 	color: #226622;
 	text-decoration: none;
 }
 
 a :hover {
+	background-color: #226622;
+	color: #0A3C5C;
     text-decoration: solid;
 }
 
@@ -55,6 +52,12 @@ h1, h2 {
   color: #0A3C5C;
 }
 
+h2 {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+}
+
 table.listing {
     width: 95%;
 }
@@ -72,13 +75,13 @@ table.listing tr.odd {
 }
 
 .button {
-    color: #FFFFFF;
+    color: #EFEFEF;
     font-weight: bold;
     line-height: 30px;
     display: block;
     width: 250px;
     text-align: center;
-	background-color: #226622;
+	background-color: #0A3C5C;
 }
 
 .green {
@@ -122,15 +125,20 @@ table.listing tr.odd {
 }
 
 .footer {
-	font-family: 'Exo 2', sans-serif;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	padding-left: 40%;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 10px;
 	color: #0A3C5C;
-	margin-top: 30px;
+	padding-top: 5px;
 	background-color: #FFFFFF;
-	text-decoration: none;
 	vertical-align: bottom;
+	border-top: solid;
+	border-width: 1px;
+	border-color: grey;
 }
 
 .line {
@@ -143,10 +151,38 @@ table.listing tr.odd {
 
 /*** table banner ***/
 
-#banner {
-    width: 100%;
+#menu {
+	position: fixed;
+	display: block;
+	top: 60px;
+	right: 0px;
+    width: 300px;
 	padding-bottom: 5px;
-    border-bottom: 3px solid #0A3C5C;
+	background-color: #FFFFFF;
+}
+
+#menu.div a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+
+.banner {
+	position: fixed;
+	display: block;
+	top: 0px;
+	left: 0px;
+    width: 100%;
+	padding-bottom: 3px;
+	background-color: #FFFFFF;
+    border-bottom: 2px solid #0A3C5C;
+}
+
+#banner table {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+	background: #FFFFFF; 
 }
 
 #banner .image {
@@ -158,27 +194,33 @@ table.listing tr.odd {
 	padding-bottom: 2px;
 }
 
-#banner .header {
-	background: #FFFFFF; /* Old browsers */
-}
-
 /*** main box ***/
 
 #main {
+	margin-left: 20%;
+	margin-top: 100px;
+	margin-bottom: 100px;
     border: 1px thin #226622;
     background-color: #EDEDED;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 50px;
     font-size: 16px;
 	width: 60%;
     text-align: left;
 }
 
-.content {
-    padding: 10px 10px 10px 10px;
+#main a:hover {
+	text-decoration: underline;
+	color: 0A3C5C;
+	background-color: #FFFFFF;
+}
+
+content {
+	padding: 10px 10px 10px 10px;
 }
 
 .div-button {
 	background-color: #0A3C5C;
+	color: #226622;
     height: 32px;
     padding-top: 10px;
 }
@@ -195,9 +237,10 @@ div.licence {
 input {
 	width: 200px;
     font-size: 16px;
-	text-align: center;
+	text-align: left;
     border: 1px solid #0A3C5C;
     background-color: #FAFAFA;
+	color: #000000;
 	padding: 2px 2px 2px 2px;
 }
 
@@ -207,11 +250,11 @@ input {
 }
 
 .flag_button img.flag {
-	max-width: 100px;
+	max-width: 80px;
 }
 
 .flag_button .label {
-    font: size 18px;
+    font: size 16px;
 	padding: 5px;
     display: block;
     background-color: #ADADAD;
@@ -224,10 +267,10 @@ a.show_incomplete.button {
 	display: block;
 	margin: 10px auto;
 	width: 300px;
-	font-size: 20px;
-	line-height: 40px;
+	font-size: 18px;
+	line-height: 30px;
 	white-space: nowrap;
-	height: 40px;
+	height: 30px;
 }
 
 .error {

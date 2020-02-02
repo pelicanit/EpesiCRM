@@ -17,13 +17,11 @@ class ModulesUp extends SteppedAdminModule {
     }
 
     public function start_text() {
-        return '<center>This utility will rebuild load priority array.<br/><br/>'
-                . 'After clicking Next button please wait...</center>';
+        return '<H2>This utility will rebuild load priority array.</H2><br/><div>After clicking Next button please wait...</div>';
     }
 
     public function success_text() {
-        $text = '<center><strong>Load priority array was successfully updated.</strong></center>';
-        $text .='<a href="./index.php"> MAIN MENU</a></center>';
+        $text = '<H2>Load priority array was successfully updated.</H2>';
         return $text;
     }
 
